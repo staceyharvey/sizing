@@ -102,6 +102,8 @@ form.addEventListener("submit", function(event) {
 		sp = 5;
 	} else if (total <= 8) {
 		sp = 8;
+	} else if (total <=14) {
+		sp = 13;
 	} else {
 		sp = 100;
 	}
@@ -125,8 +127,10 @@ function theMessage() {
 	} else if (sp == 8) {
 		message = "8 Story Points";
 		highlight("sp8");
+	} else if (sp == 13) {
+		message = "13 Story Points";
 	} else {
-		message = "Break it Down!";
+		message = "Break it Down";
 		document.getElementById("result-message").className = "flashit";
 	}
 }
